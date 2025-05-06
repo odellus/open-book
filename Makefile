@@ -35,7 +35,8 @@ FILTER_ARGS = --filter pandoc-crossref
 
 ARGS = $(TOC) $(MATH_FORMULAS) $(METADATA_ARGS) $(FILTER_ARGS) $(DEBUG_ARGS) $(BIBLIOGRAPHY)
 	
-PANDOC_COMMAND = $(HOME)/.local/bin/pandoc
+# PANDOC_COMMAND = $(HOME)/.local/bin/pandoc
+PANDOC_COMMAND = pandoc
 
 # Per-format options
 
