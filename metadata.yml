@@ -1,0 +1,37 @@
+---
+title: open-book
+subtitle: A short example of using pandoc to generate slick web pages from markdown
+biblio-title: Bibliography
+reference-section-title: Bibliography
+author: Thomas Wood
+rights: CC-BY-NC-SA-4.0
+lang: en-US
+mainlang: english
+otherlang: english
+tags: [rlhf, ebook, ai, ml]
+date: 6 May 2025
+abstract: |
+  This is a short example of using pandoc to generate slick web pages from markdown.
+# mainfont: DejaVu Sans # not available on Mac
+Filter preferences:
+- pandoc-crossref
+geometry:
+  - margin=1.5in # Sets all margins (top, bottom, left, right) equally
+linkReferences: true
+link-citations: true
+numbersections: true
+# for better code processing
+listings: true
+# add pages in pdf between chapters
+header-includes:
+  - |
+    ```{=latex}
+    % Add new page before chapters start
+    \pretocmd{\section}{\newpage}{}{}  
+    % more stable tables in pdf
+    \usepackage{array}
+    \newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1\textwidth}}
+    ```
+##################
+---
+
