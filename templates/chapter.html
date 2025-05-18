@@ -7,14 +7,14 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
   <!-- Add Open Graph meta tags for share image -->
-  <meta property="og:image" content="https://github.com/natolambert/rlhf-book/blob/main/images/rlhf-book-share" />
+  <meta property="og:image" content="https://github.com/odellus/open-book/blob/main/images/cover.png" />
   <meta property="og:image:width" content="1920" />
   <meta property="og:image:height" content="1080" />
   
   <!-- <meta property="og:title" content="$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$" /> -->
   <meta property="og:title" content="$if(page-title)$$page-title$$else$$title$$endif$ | RLHF Book by Nathan Lambert" />
-  <meta property="og:description" content="The Reinforcement Learning from Human Feedback Book" />
-  <meta property="og:url" content="https://rlhfbook.com" />
+  <meta property="og:description" content="The Open Book" />
+  <meta property="og:url" content="https://odellus.github.io/open-book/" />
 
   $for(author-meta)$
   <meta name="author" content="$author-meta$" />
@@ -29,9 +29,9 @@ $endif$
    <!-- SEO and Open Graph titles -->
    <title>
     $if(page-title)$
-      $page-title$ | RLHF Book by Nathan Lambert
+      $page-title$ | Open Book
     $else$
-      $title$ | RLHF Book by Nathan Lambert
+      $title$ | Open Book
     $endif$
   </title>
   
@@ -71,7 +71,7 @@ $include-before$
 $endfor$
 $if(title)$
 <header id="title-block-header">
-<h1 class="title"><a href="https://rlhfbook.com/" style="color: inherit; text-decoration: none;">$title$</a></h1>
+<h1 class="title"><a href="https://odellus.github.io/open-book/" style="color: inherit; text-decoration: none;">$title$</a></h1>
 $if(subtitle)$
 <p class="subtitle">$subtitle$</p>
 $endif$
@@ -130,7 +130,7 @@ $endfor$
     </a>
     <!-- Add more social links here -->
   </div>
-  <p>&copy; 2024 RLHF Book Team</p>
+  <p>&copy; 2025 Open Book Team</p>
 </footer>
 </body>
 </html>
